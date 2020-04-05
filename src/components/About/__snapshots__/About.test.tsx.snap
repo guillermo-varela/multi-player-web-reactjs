@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<About /> matches snapshot 1`] = `
+<div
+  className="jumbotron"
+>
+  <h1>
+    Hi again :)
+  </h1>
+  <br />
+  <p>
+    This web application was developed to learn about:
+  </p>
+  <ul>
+    <li>
+      <a
+        href="https://reactjs.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        React
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://reactjs.org/docs/hooks-intro.html"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Hooks
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://reacttraining.com/react-router/web/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        React Router
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://react-bootstrap.github.io/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        React Bootstrap
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/react-bootstrap/react-router-bootstrap"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        react-router-bootstrap
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://sass-lang.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        SASS
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://reactjs.org/docs/code-splitting.html#route-based-code-splitting"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Route based code splitting
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://redux.js.org/recipes/usage-with-typescript/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Redux using TypeScript
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://jaredpalmer.com/formik"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Forms in React using Formik
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/formatjs/react-intl"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Support for multiple languages (internationalization) using react-intl
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        REST services with reactive architecture (non-blocking) with Spring WebFlux and Spring Security
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://connect2id.com/products/nimbus-jose-jwt"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Stateless/sessionless authentication on a server using "Javascript Object Signing and Encryption" (JOSE) and "JSON Web Token" (JWT)"
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#use-of-custom-request-headers"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Use of custom HTTP headers in stateless/sessionless environments to prevent CSRF attacks
+      </a>
+    </li>
+  </ul>
+  <p>
+    The source code for this project can be found at:
+  </p>
+  <ul>
+    <li>
+      Backend: 
+      <a
+        href="https://github.com/guillermo-varela/multi-player-auth"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        https://github.com/guillermo-varela/multi-player-auth
+      </a>
+    </li>
+    <li>
+      Frontend: 
+      <a
+        href="https://github.com/guillermo-varela/multi-player-web-reactjs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        https://github.com/guillermo-varela/multi-player-web-reactjs
+      </a>
+    </li>
+  </ul>
+  <p>
+    The multimedia content was fetched using the 
+    <a
+      href="https://pixabay.com/api/docs"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Pixabay API
+    </a>
+    .
+  </p>
+</div>
+`;

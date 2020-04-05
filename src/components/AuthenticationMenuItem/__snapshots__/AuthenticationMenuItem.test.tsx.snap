@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AuthenticationMenuItem /> matches authenticated snapshot 1`] = `
+<div
+  className="nav"
+  onKeyDown={[Function]}
+>
+  <span
+    className="navbar-text"
+  >
+    <span
+      className="align-middle"
+    >
+      user-test
+      : 
+    </span>
+    <button
+      className="menu-link btn btn-link"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Sign Out
+    </button>
+  </span>
+</div>
+`;
+
+exports[`<AuthenticationMenuItem /> matches unauthenticated snapshot 1`] = `
+<div
+  className="nav"
+  onKeyDown={[Function]}
+>
+  <a
+    className="nav-link"
+    data-rb-event-key="test/signIn"
+    href="test/signIn"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    Sign In
+  </a>
+</div>
+`;

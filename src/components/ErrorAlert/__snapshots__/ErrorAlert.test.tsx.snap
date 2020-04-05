@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ErrorAlert /> matches snapshot 1`] = `
+<div
+  className="fade alert alert-danger show"
+  role="alert"
+>
+  <span>
+    Ops! An error occurred...
+  </span>
+</div>
+`;

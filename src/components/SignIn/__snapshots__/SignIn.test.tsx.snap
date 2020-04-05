@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignIn /> matches snapshot 1`] = `
+<form
+  className="loginForm"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="form-label"
+      htmlFor="formUsername"
+    >
+      Email
+    </label>
+    <input
+      autoFocus={true}
+      className="form-control"
+      id="formUsername"
+      name="username"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="email"
+      value="user@test.com"
+    />
+    <div
+      className="invalid-feedback"
+    />
+    <small
+      className="text-muted form-text"
+    >
+      Use user@test.com as email and password to test
+    </small>
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      className="form-label"
+      htmlFor="formPassword"
+    >
+      Password
+    </label>
+    <input
+      className="form-control"
+      id="formPassword"
+      name="password"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="password"
+      value="user@test.com"
+    />
+    <div
+      className="invalid-feedback"
+    />
+  </div>
+  <button
+    className="btn btn-warning btn-block btn-lg"
+    disabled={false}
+    type="submit"
+  >
+    Sign In
+  </button>
+</form>
+`;
