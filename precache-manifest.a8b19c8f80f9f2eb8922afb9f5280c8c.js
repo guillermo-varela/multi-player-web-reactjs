@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b9ea61f2b5aa376823cfd4f81301e1f2",
+    "revision": "710b0f637601d7010207dbab3b96ed59",
     "url": "/multi-player-web-reactjs/index.html"
   },
   {
