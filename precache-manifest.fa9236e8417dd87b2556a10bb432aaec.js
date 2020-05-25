@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "710b0f637601d7010207dbab3b96ed59",
+    "revision": "cce65913724ba8fef4ac0d9d7513af95",
     "url": "/multi-player-web-reactjs/index.html"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/multi-player-web-reactjs/static/css/7.14fc1339.chunk.css"
   },
   {
-    "revision": "b6de19bf1ac2a0d5a9da",
+    "revision": "f7c8bc309d3efdd9c256",
     "url": "/multi-player-web-reactjs/static/css/main.0d98cd0d.chunk.css"
   },
   {
@@ -60,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/multi-player-web-reactjs/static/js/7.b0742292.chunk.js"
   },
   {
-    "revision": "b6de19bf1ac2a0d5a9da",
-    "url": "/multi-player-web-reactjs/static/js/main.878e1869.chunk.js"
+    "revision": "f7c8bc309d3efdd9c256",
+    "url": "/multi-player-web-reactjs/static/js/main.d6be0e33.chunk.js"
   },
   {
     "revision": "99a106fc711a3abe0b79",
