@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.scss"],"names":[],"mappings":"AAAA,8BACE,cAAiB,CACjB,wBAA+B,CAFjC,0CAII,yBAAgC,CAChC,oBAAqB","file":"main.0d98cd0d.chunk.css","sourcesContent":[".menu-link a, button.menu-link {\n  padding-left: 0px;\n  color: rgba(255, 255, 255, 0.5);\n  &:hover {\n    color: rgba(255, 255, 255, 0.75);\n    text-decoration: none;\n  }\n}\n"]}
