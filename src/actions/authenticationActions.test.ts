@@ -86,6 +86,12 @@ describe('authenticationActions', () => {
     });
   });
 
+  describe('checkAuthenticationForTooLongAction()', () => {
+    it('creates action when the checkAuthentication operation ran for too much time', () => {
+      const expectedAction = { type: ActionType.CHECK_AUTHENTICATION_PENDING_TOO_LONG };
+      expect(actions.checkAuthenticationForTooLongAction()).toEqual(expectedAction);
+    });
+  });
 
   describe('signOutAction()', () => {
     it('creates actions for successful signOut', () => {

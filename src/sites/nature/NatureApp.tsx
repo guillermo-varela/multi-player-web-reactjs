@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { useIntl } from 'react-intl';
+import Fade from 'react-bootstrap/Fade';
+import { useIntl, FormattedMessage } from 'react-intl';
 import Header from './Header/Header';
 import useTypedSelector from '../../hooks/useTypedSelector';
 import useAuthentication from '../../hooks/useAuthentication';
@@ -15,7 +16,7 @@ const NatureApp: React.FC = (props: any) => {
   const intl = useIntl();
 
   const favicon = document.querySelector('link[rel="shortcut icon"]');
-  favicon?.setAttribute('href', '/sites/nature/favicon.ico');
+  favicon?.setAttribute('href', `${process.env.REACT_APP_BASENAME}sites/nature/favicon.ico`);
 
   useEffect(() => {
     document.title = intl.formatMessage({ id: 'nature.title' });
@@ -25,8 +26,13 @@ const NatureApp: React.FC = (props: any) => {
   return (
     authenticationState.isPendingCheckAuthentication
       ?
-      <div className="mx-auto mt-3">
+      <div className="mx-auto text-center mt-3">
         <Loading variant="success" />
+        <Fade in={authenticationState.isPendingCheckAuthenticationTooLong}>
+          <div id="checkAuthenticationTooLong">
+            <FormattedMessage id='root.checkAuthentication.tooLong' />
+          </div>
+        </Fade>
       </div>
       :
       <div className="d-flex flex-column h-100">

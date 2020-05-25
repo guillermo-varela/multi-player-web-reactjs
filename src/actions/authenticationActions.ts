@@ -19,6 +19,10 @@ export const checkAuthenticationAction = (): ThunkResult => (dispatch) => {
     .catch(() => dispatch({ type: ActionType.SIGN_OUT_SUCCESS }));
 }
 
+export const checkAuthenticationForTooLongAction = (): Action => {
+  return { type: ActionType.CHECK_AUTHENTICATION_PENDING_TOO_LONG };
+}
+
 export const signOutAction = (): ThunkResult => (dispatch) => {
   dispatch({ type: ActionType.SIGN_OUT_PENDING });
 

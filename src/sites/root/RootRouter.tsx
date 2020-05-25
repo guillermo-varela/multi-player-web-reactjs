@@ -9,7 +9,7 @@ const SpaceApp = lazy(() => import('../space/SpaceApp'));
 
 const RootRouter: React.FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.REACT_APP_BASENAME}>
       <Suspense fallback={<FormattedMessage id='root.loading' />}>
         <Switch>
           <Route exact path={routes.root} component={RootHome} />

@@ -9,6 +9,7 @@ type State = {
   isPendingSignOut: boolean,
   isErrorSignOut: boolean,
   isPendingCheckAuthentication: boolean,
+  isPendingCheckAuthenticationTooLong: boolean,
   user?: User
 }
 
@@ -18,7 +19,8 @@ const initialState: State = {
   isBadCredentials: false,
   isPendingSignOut: false,
   isErrorSignOut: false,
-  isPendingCheckAuthentication: false
+  isPendingCheckAuthentication: false,
+  isPendingCheckAuthenticationTooLong: false
 };
 
 const authenticationReducer = (state: State = initialState, action: Action): State => {
@@ -37,6 +39,8 @@ const authenticationReducer = (state: State = initialState, action: Action): Sta
       return initialState;
     case ActionType.CHECK_AUTHENTICATION_PENDING:
       return { ...state, isPendingCheckAuthentication: true };
+    case ActionType.CHECK_AUTHENTICATION_PENDING_TOO_LONG:
+      return { ...state, isPendingCheckAuthenticationTooLong: state.isPendingCheckAuthentication };
     default:
       return state;
   }

@@ -39,6 +39,7 @@
   "nature.introduction": "En este sitio podrás encontrar contenido multimedia sobre la naturaleza.",
   "nature.multimedia.endOfContent": "Esto es todo por ahora...",
   "nature.title": "Naturaleza",
+  "root.checkAuthentication.tooLong": "Por favor ten paciencia mientras nuestro backend inicia en Heroku",
   "root.loading": "Cargando...",
   "root.locale.label": "Idioma",
   "root.nature.description": "Imágenes y videos de la flora y la fauna.",

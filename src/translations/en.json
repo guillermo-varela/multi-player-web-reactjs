@@ -39,6 +39,7 @@
   "nature.introduction": "On this site you can find multimedia content about nature.",
   "nature.multimedia.endOfContent": "That's all for now...",
   "nature.title": "Nature",
+  "root.checkAuthentication.tooLong": "Please be patient while our backend starts on Heroku",
   "root.loading": "Loading...",
   "root.locale.label": "Language",
   "root.nature.description": "Images and videos of flora and fauna.",

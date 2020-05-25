@@ -4,12 +4,15 @@ import thunk from 'redux-thunk';
 import configureMockStore, { MockStoreEnhanced } from 'redux-mock-store';
 import { mount } from 'enzyme';
 import ActionType from '../model/ActionType';
-import { checkAuthenticationAction, simpleSignOutAction } from '../actions/authenticationActions';
+import { checkAuthenticationAction, checkAuthenticationForTooLongAction, simpleSignOutAction } from '../actions/authenticationActions';
 import useAuthentication from './useAuthentication';
 
 jest.mock('../actions/authenticationActions');
 const checkAuthenticationActionMock = checkAuthenticationAction as jest.Mock;
+const checkAuthenticationForTooLongActionMock = checkAuthenticationForTooLongAction as jest.Mock;
 const simpleSignOutActionMock = simpleSignOutAction as jest.Mock;
+
+jest.useFakeTimers();
 
 describe('useAuthentication', () => {
   const mockStore = configureMockStore([thunk]);
@@ -18,6 +21,8 @@ describe('useAuthentication', () => {
   beforeEach(() => {
     checkAuthenticationActionMock.mockReset();
     checkAuthenticationActionMock.mockReturnValue({ type: ActionType.CHECK_AUTHENTICATION_PENDING });
+    checkAuthenticationForTooLongActionMock.mockReset();
+    checkAuthenticationForTooLongActionMock.mockReturnValue({ type: ActionType.CHECK_AUTHENTICATION_PENDING_TOO_LONG });
     simpleSignOutActionMock.mockReset();
     simpleSignOutActionMock.mockReturnValue({ type: ActionType.SIGN_OUT_SUCCESS });
   });
@@ -29,6 +34,17 @@ describe('useAuthentication', () => {
     ];
     expect(store.getActions()).toEqual(expectedActions);
     expect(checkAuthenticationActionMock).toBeCalledTimes(1);
+  });
+
+  it('after an interval verifies if checkAuthentication is still running', () => {
+    mount(buildComponent());
+    const expectedActions = [
+      { type: ActionType.CHECK_AUTHENTICATION_PENDING },
+      { type: ActionType.CHECK_AUTHENTICATION_PENDING_TOO_LONG }
+    ];
+    jest.runAllTimers();
+    expect(store.getActions()).toEqual(expectedActions);
+    expect(checkAuthenticationForTooLongActionMock).toBeCalled();
   });
 
   it('signs out the user if session is expired', () => {

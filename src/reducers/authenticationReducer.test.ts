@@ -7,7 +7,8 @@ const initialState = {
   isBadCredentials: false,
   isPendingSignOut: false,
   isErrorSignOut: false,
-  isPendingCheckAuthentication: false
+  isPendingCheckAuthentication: false,
+  isPendingCheckAuthenticationTooLong: false
 };
 
 describe('authenticationReducer', () => {
@@ -50,5 +51,17 @@ describe('authenticationReducer', () => {
   it('returns "isPendingCheckAuthentication": true for CHECK_AUTHENTICATION_PENDING', () => {
     const state = authenticationReducer(undefined, { type: ActionType.CHECK_AUTHENTICATION_PENDING });
     expect(state).toStrictEqual({ ...initialState, isPendingCheckAuthentication: true });
+  });
+
+  it('returns "isPendingCheckAuthenticationTooLong": true for CHECK_AUTHENTICATION_PENDING_TOO_LONG', () => {
+    const expectedState = { ...initialState, isPendingCheckAuthentication: true };
+    const state = authenticationReducer(expectedState, { type: ActionType.CHECK_AUTHENTICATION_PENDING_TOO_LONG });
+    expect(state).toStrictEqual({ ...expectedState, isPendingCheckAuthenticationTooLong: true });
+  });
+
+  it('returns "isPendingCheckAuthenticationTooLong": false for CHECK_AUTHENTICATION_PENDING_TOO_LONG', () => {
+    const expectedState = { ...initialState, isPendingCheckAuthentication: false };
+    const state = authenticationReducer(expectedState, { type: ActionType.CHECK_AUTHENTICATION_PENDING_TOO_LONG });
+    expect(state).toStrictEqual({ ...expectedState, isPendingCheckAuthenticationTooLong: false });
   });
 });

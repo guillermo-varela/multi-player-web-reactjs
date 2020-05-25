@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import useTypedSelector from './useTypedSelector';
-import { checkAuthenticationAction, simpleSignOutAction } from '../actions/authenticationActions';
+import { checkAuthenticationAction, checkAuthenticationForTooLongAction, simpleSignOutAction } from '../actions/authenticationActions';
 
 const useAuthentication = () => {
   const authenticationState = useTypedSelector(state => state.authentication);
@@ -9,6 +9,10 @@ const useAuthentication = () => {
 
   useEffect(() => {
     dispatch(checkAuthenticationAction());
+
+    setTimeout(() => {
+      dispatch(checkAuthenticationForTooLongAction());
+    }, 3000);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
