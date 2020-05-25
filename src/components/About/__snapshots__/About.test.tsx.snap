@@ -129,6 +129,15 @@ exports[`<About /> matches snapshot 1`] = `
         Use of custom HTTP headers in stateless/sessionless environments to prevent CSRF attacks
       </a>
     </li>
+    <li>
+      <a
+        href="https://swagger.io/resources/open-api/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        OpenAPI 3
+      </a>
+    </li>
   </ul>
   <p>
     The source code for this project can be found at:

@@ -7,6 +7,7 @@
   "component.about.internationalization": "Soporte para múltiples idiomas (internacionalización) usando react-intl",
   "component.about.introduction": "Esta aplicación web fue desarrollada con fines de aprendizaje sobre:",
   "component.about.jwt": "Autenticación sin estado/sesión en un servidor usando \"Javascript Object Signing and Encryption\" (JOSE) y \"JSON Web Token\" (JWT)",
+  "component.about.openAPI": "OpenAPI 3",
   "component.about.pixabay": "El contenido multimedia fue consultado usando el {link}.",
   "component.about.pixabay.name": "API de Pixabay",
   "component.about.redux.typescript": "Redux usando TypeScript",

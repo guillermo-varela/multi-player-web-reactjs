@@ -83,6 +83,12 @@ const About: React.FC = () => {
             <FormattedMessage id='component.about.csrf' />
           </a>
         </li>
+        <li>
+          <a href="https://swagger.io/resources/open-api/"
+            target="_blank" rel="noopener noreferrer">
+            <FormattedMessage id='component.about.openAPI' />
+          </a>
+        </li>
       </ul>
       <p>
         <FormattedMessage id='component.about.code' />
