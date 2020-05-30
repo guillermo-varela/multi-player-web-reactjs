@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f91697d3399ead3a17780a8924688cb",
+    "revision": "6d0fa4e6e6ca9d4a467296b0b738e049",
     "url": "/multi-player-web-reactjs/index.html"
   },
   {
-    "revision": "a1739ea8fb6160e7918e",
+    "revision": "8228903c4a72bf216494",
     "url": "/multi-player-web-reactjs/static/css/4.89f067aa.chunk.css"
   },
   {
-    "revision": "4a2cd5c67e21790f5ed0",
+    "revision": "a9ce57e54152d126c89d",
     "url": "/multi-player-web-reactjs/static/css/5.85c405f7.chunk.css"
   },
   {
-    "revision": "010d565dea049a85af2e",
+    "revision": "a85707d69889c7d9e5ca",
     "url": "/multi-player-web-reactjs/static/css/6.ccf72c0a.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/multi-player-web-reactjs/static/css/7.14fc1339.chunk.css"
   },
   {
-    "revision": "9bba5d6ad738d154064e",
+    "revision": "38e28c29ce1093e60860",
     "url": "/multi-player-web-reactjs/static/css/main.0d98cd0d.chunk.css"
   },
   {
@@ -40,31 +40,31 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/multi-player-web-reactjs/static/js/1.be843648.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a1739ea8fb6160e7918e",
-    "url": "/multi-player-web-reactjs/static/js/4.c8990963.chunk.js"
+    "revision": "8228903c4a72bf216494",
+    "url": "/multi-player-web-reactjs/static/js/4.f48f349a.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/multi-player-web-reactjs/static/js/4.c8990963.chunk.js.LICENSE.txt"
+    "url": "/multi-player-web-reactjs/static/js/4.f48f349a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4a2cd5c67e21790f5ed0",
-    "url": "/multi-player-web-reactjs/static/js/5.4c20d136.chunk.js"
+    "revision": "a9ce57e54152d126c89d",
+    "url": "/multi-player-web-reactjs/static/js/5.3aca50b5.chunk.js"
   },
   {
-    "revision": "010d565dea049a85af2e",
-    "url": "/multi-player-web-reactjs/static/js/6.587b09e2.chunk.js"
+    "revision": "a85707d69889c7d9e5ca",
+    "url": "/multi-player-web-reactjs/static/js/6.3f24c580.chunk.js"
   },
   {
     "revision": "e2184ec606e0dfac8d22",
     "url": "/multi-player-web-reactjs/static/js/7.8d4f6888.chunk.js"
   },
   {
-    "revision": "9bba5d6ad738d154064e",
-    "url": "/multi-player-web-reactjs/static/js/main.c4c35a71.chunk.js"
+    "revision": "38e28c29ce1093e60860",
+    "url": "/multi-player-web-reactjs/static/js/main.418d91d8.chunk.js"
   },
   {
-    "revision": "c03ac3e2e2a6cfa820d4",
-    "url": "/multi-player-web-reactjs/static/js/runtime-main.dd6563b5.js"
+    "revision": "be0fbbcb5f6ea50d78be",
+    "url": "/multi-player-web-reactjs/static/js/runtime-main.475a4f6f.js"
   }
 ]);
