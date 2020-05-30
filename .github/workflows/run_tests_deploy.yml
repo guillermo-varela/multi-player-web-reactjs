@@ -30,6 +30,8 @@ jobs:
       run: yarn test
     - name: Production build
       run: yarn build
+      env:
+        REACT_APP_PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
