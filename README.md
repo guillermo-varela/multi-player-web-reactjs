@@ -1,3 +1,5 @@
+![Tests and Deploy](https://github.com/guillermo-varela/multi-player-web-reactjs/workflows/Run%20Tests%20and%20Deploy/badge.svg?branch=master)
+
 ## English
 
 Live demo:
